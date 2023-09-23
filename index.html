@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+   *{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+   }
+.container{
+    background-color: beige;
+    height:100vh;
+    width: 100vw;
+    border:5px solid black;
+}
+#box1{
+    height:50px;
+    width:280px;
+    border:2px solid black;
+    border-radius:20px;
+    position:relative;
+    background-color: pink;
+margin:15px;
+animation :5s linear 1s infinite alternate none running left;
+}
+#box2{
+    height:50px;
+    width:280px;
+    border:2px solid black;
+    border-radius:20px;
+    position:relative;
+    background-color: pink;
+margin:15px;
+animation :5s linear 1s infinite alternate none running down;
+
+}
+#circle{
+    height:50px;
+    width:50px;
+    border:2px solid black;
+    border-radius:50%;
+    position:relative;
+    background-color: blue;
+margin:15px;
+top:260px;
+left:760px;
+animation :10s linear 1s infinite alternate-reverse none running ball;
+
+}
+
+
+@keyframes ball {
+    0%{
+top:-2%;
+left:0%;
+    }
+    5%{
+        top:71%;
+left:70%;
+    }
+    55%{
+        top:-2%;
+left:85%;
+
+    }
+    100%{
+        top:71%;
+left:80%;
+
+    }
+} 
+
+@keyframes left {
+    from{
+top:0px;
+left:0px;
+    }
+    to{
+top:0px;
+left:1225px;
+    }
+} 
+
+@keyframes down {
+    from{
+top:500px;
+left:1225px;
+    }
+    to{
+top:500px;
+left:0px;
+    }
+} 
+
+</style>
+
+
+</head>
+<body>
+    <div class="container">
+    <div id="box1">    </div>
+
+<div id="circle">
+
+</div>
+    <div id="box2">
+
+    </div>
+</div>
+</body>
+</html>
